@@ -1,0 +1,321 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+
+/* ----CUSTOM CSS---- */
+
+body {
+	font-family: 'Cuprum', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Vollkorn', serif;
+}
+
+h1 {
+	background-image: url("../images/z.png");
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 44px;
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow: hidden;
+	background-size: contain;
+	float: left;
+	margin-top: 12px;
+	margin-left: 12px;
+}
+
+h3 {
+	font-size: 3em;
+	margin-bottom: .5em;
+}
+
+
+/* ---- IMAGES ---- */
+
+img {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+
+/* ---- GRID SYSTEM ---- */
+.row {
+	clear: both;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 1170px;
+}
+.row:after {
+	content: "";
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+}
+.column {
+	float: left;
+	margin: 0 0 0 2.56%;
+	min-height: 1px;
+}
+.column:first-child { 
+	margin-left: 0;
+}
+.span_12_of_12 {
+	width: 100%;
+}
+.span_11_of_12 {
+  	width: 91.45%;
+}
+.span_10_of_12 {
+  	width: 82.90%;
+}
+.span_9_of_12 {
+  	width: 74.36%;
+}
+.span_8_of_12 {
+  	width: 65.81%;
+}
+.span_7_of_12 {
+  	width: 57.26%;
+}
+.span_6_of_12 {
+  	width: 48.72%;
+}
+.span_5_of_12 {
+  	width: 40.17%;
+}
+.span_4_of_12 {
+  	width: 31.62%;
+}
+.span_3_of_12 {
+  	width: 23.08%;
+}
+.span_2_of_12 {
+  	width: 14.53%;
+}
+.span_1_of_12 {
+  	width: 5.986%;
+}
+
+
+/* ---- LINKS ---- */
+
+a {
+	text-decoration: none;
+}
+
+
+/* ---- HEADER ---- */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 68px;
+	background-color: rgba(220, 190, 132, 0.61);
+	border-bottom: 1px solid #878d8f;
+}
+
+nav {
+	float: right;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	display: inline-block;
+	padding: 26px 10px;
+	color: #000;
+	transition: background 2s;
+}
+
+nav li a:hover {
+	background: #DCBE84;
+}
+
+/* ---- BUTTONS ---- */
+
+.fancy-button {
+	background-image: linear-gradient(#fff, #DCBE84);
+	display: inline-block;
+	padding: 20px;
+	margin-top: 15px;
+	border-radius: 10px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+
+
+/* ---- BANNER ---- */
+#banner {
+	background-image: url("../images/zebra-hero.jpg");
+	height: 483px;
+	background-size: cover;
+	padding-top: 91px;
+	text-align: center;
+	color: #fff;
+}
+
+#banner img {
+	width: 100px;
+	border-radius: 50%;
+}
+
+#banner h2 {
+	font-size: 3em;
+	margin-top: 20px;
+}
+
+#banner span {
+	font-size: 2em;
+	border: 3px solid #fff;
+	padding: 5px 30px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+
+/* ---- ABOUT ---- */
+
+#about {
+	text-align: center;
+	margin: 2em auto;
+}
+
+#about img {
+	border-radius: 50%;
+	border: 4px solid #000;
+}
+
+
+
+/* ---- MISSION ---- */
+
+#mission {
+	text-align: center;
+	background-color: #f6e3bf;
+	padding: 2em 0;
+	margin: 2em auto;
+}
+
+#mission .column {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+
+
+/* ---- FOOTER ---- */
+ 
+ footer {
+ 	color: #fff;
+ 	background: #DCBE84;
+ 	padding: 20px;
+ 	text-align: center;
+ }
+
+footer li {
+	display: inline-block;
+	padding-top: 30px;
+}
+
+footer li a {
+	padding: 20px;
+}
+
+
+/* ---- BLOGS AREA in Stripes ---- */
+
+.blog {
+	margin: 1em 0;
+}
+
+.blog:nth-child(odd) {
+	background-color: #4D5837;
+}
+
+.blog:nth-child(even) {
+	background-color: #A8B8C5;
+}
+
+.blog:nth-child(odd) img {
+	float: left;
+}
+
+.blog:nth-child(even) img {
+	float: right;
+}
+
+
+/* ---- SIDEBAR ---- */
+
+.sidebar {
+	background-color: #4D5837;
+}
+
+
+/* ---- MAIN CONTENT ---- */
+
+main {
+	display: flex;
+}
+
+
+/* ---- MOBILE ---- */
+
+.mobile-only {
+	display: none;
+}
+
+#toggler {
+	display: none;
+}
+
+
+/* ---- Mobile Breakpoint ---- */
+
+@media screen and (max-width: 600px) {
+	.column, .column:first-child {
+		width: 95%;
+		margin: 1em 2.5%;
+	}
+
+	.mobile-only {
+		display: inline-block;
+	}
+
+	header nav {
+		text-align: right;
+	}
+
+	label[for="toggler"] {
+		padding: 26px 10px;
+	}
+
+	#toggler ~ ul {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 1s;
+		background-color: #fff;
+	}
+
+	#toggler:checked ~ ul {
+		max-height: 100vh;
+	}
+}
+
+
+
+
+
